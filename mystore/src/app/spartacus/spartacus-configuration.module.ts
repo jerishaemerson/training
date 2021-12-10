@@ -21,6 +21,11 @@ import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacu
         showMoreButton: false,
       },
     },
+    layoutSlots: {
+      ProductListPageTemplate: {
+        slots: ['ProductListSlot', 'ProductLeftRefinements'],
+      },
+    },
   }), provideConfig(<SiteContextConfig>{
     context: {
       currency: ['USD'],
