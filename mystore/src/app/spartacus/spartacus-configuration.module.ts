@@ -16,7 +16,7 @@ import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacu
     view: {
       defaultPageSize: 20,
       infiniteScroll: {
-        active: false,
+        active: true,
         productLimit: 0,
         showMoreButton: false,
       },
