@@ -13,6 +13,14 @@ import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacu
         baseUrl: 'https://localhost:9002',
       }
     },
+    view: {
+      defaultPageSize: 20,
+      infiniteScroll: {
+        active: false,
+        productLimit: 0,
+        showMoreButton: false,
+      },
+    },
   }), provideConfig(<SiteContextConfig>{
     context: {
       currency: ['USD'],
