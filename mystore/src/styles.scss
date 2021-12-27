@@ -3,6 +3,12 @@
 $styleVersion: 4.0;
 @import '~@spartacus/styles/index';
 
+app-custom-product-carousel {
+  @extend %cx-product-carousel !optional;
+}
+app-custom-carousel {
+  @extend %cx-carousel !optional;
+}
 app-custom-added-to-cart-dialog {
   @extend %cx-added-to-cart-dialog !optional;
 }
