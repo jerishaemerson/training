@@ -2,3 +2,14 @@
 
 $styleVersion: 4.0;
 @import '~@spartacus/styles/index';
+
+app-custom-added-to-cart-dialog {
+  @extend %cx-added-to-cart-dialog !optional;
+}
+app-custom-add-to-cart {
+  @extend %cx-add-to-cart !optional;
+}
+app-custom-cart-item {
+  @extend %cx-cart-item !optional;
+}
+
