@@ -1,4 +1,4 @@
-<!-- <button
+<button
   type="button"
   (click)="decrement()"
   [disabled]="control.disabled || control.value <= min"
@@ -6,8 +6,8 @@
   attr.aria-label="{{ 'itemCounter.removeOne' | cxTranslate }}"
 >
   -
-</button> -->
-<!-- <input
+</button>
+<input
   #qty
   [min]="min"
   [max]="max"
@@ -16,9 +16,9 @@
   [tabindex]="readonly ? -1 : 0"
   [formControl]="control"
   attr.aria-label="{{ 'itemCounter.quantity' | cxTranslate }}"
-/> -->
-<div>{{ quantity }}</div>
-<!-- <button
+/>
+<!-- <div>{{ quantity }}</div> -->
+<button
   type="button"
   (click)="increment()"
   [disabled]="control.disabled || control.value >= max"
@@ -26,4 +26,4 @@
   attr.aria-label="{{ 'itemCounter.addOneMore' | cxTranslate }}"
 >
   +
-</button> -->
+</button>

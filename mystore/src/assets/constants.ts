@@ -1,0 +1,1 @@
+export const QUANTITY_MAXIMUM_NUMBER = 2;

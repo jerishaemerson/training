@@ -54,14 +54,16 @@
             {{ "cartItems.quantity" | cxTranslate }}
           </div>
           <div class="cx-value">
+
             <!-- <cx-item-counter [control]="quantityControl" [readonly]="
                 !item.updateable || readonly || options.isSaveForLater
               " [max]="item.product.stock?.stockLevel || 1000" [allowZero]="true">
             </cx-item-counter> -->
+
             <app-custom-item-counter [control]="quantityControl" [readonly]="
             !item.updateable || readonly || options.isSaveForLater
-          " [max]="item.product.stock?.stockLevel || 1000" [allowZero]="true">
-        </app-custom-item-counter>
+            " [allowZero]="true">
+            </app-custom-item-counter>
           </div>
         </div>
         <!-- Total -->

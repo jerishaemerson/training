@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
 import { ItemCounterComponent } from '@spartacus/storefront';
 import { Subscription } from 'rxjs';
 import { startWith } from 'rxjs/operators';
+import * as Constants from '../../../assets/constants';
 
 @Component({
   selector: 'app-custom-item-counter',
@@ -11,9 +11,12 @@ import { startWith } from 'rxjs/operators';
 })
 export class CustomItemCounterComponent extends ItemCounterComponent implements OnInit {
 
+  @Input() max: number = Constants.QUANTITY_MAXIMUM_NUMBER;
+
   public subs: Subscription;
 
   public quantity: number;
+
   ngOnInit(): void {
     this.subs = this.control.valueChanges
       .pipe(startWith(this.control.value))
@@ -21,6 +24,7 @@ export class CustomItemCounterComponent extends ItemCounterComponent implements 
         this.quantity = this.getValidCounts(value)
       );
   }
+
   public getValidCounts(value: number) {
     if (value < this.min && !(value === 0 && this.allowZero)) {
       value = this.min;

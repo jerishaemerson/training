@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { CustomAddToCartModule } from "./custom-add-to-cart/custom-add-to-cart.module";
 import { CustomProductCarouselModule } from "./custom-product-carousel/custom-product-carousel.module";
 import { SpartacusModule } from './spartacus/spartacus.module';
+import { CustomCartDetailsModule } from './custom-cart-details/custom-cart-details.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SpartacusModule } from './spartacus/spartacus.module';
     SpartacusModule,
     CustomProductCarouselModule,
     CustomAddToCartModule,
+    CustomCartDetailsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

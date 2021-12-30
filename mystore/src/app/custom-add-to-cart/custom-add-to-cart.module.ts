@@ -7,6 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { SpinnerModule, PromotionsModule, IconModule, ItemCounterModule, KeyboardFocusModule, ModalModule, CartSharedModule } from '@spartacus/storefront';
 import { CustomCartSharedModule } from '../custom-cart-shared/custom-cart-shared.module';
+import { CustomItemCounterModule } from '../shared/custom-item-counter/custom-item-counter.module';
 
 
 
@@ -28,6 +29,7 @@ import { CustomCartSharedModule } from '../custom-cart-shared/custom-cart-shared
     IconModule,
     I18nModule,
     ItemCounterModule,
+    CustomItemCounterModule,
     KeyboardFocusModule,
     ModalModule,
     ConfigModule.withConfig({

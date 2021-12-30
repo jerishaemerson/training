@@ -18,4 +18,12 @@ app-custom-add-to-cart {
 app-custom-cart-item {
   @extend %cx-cart-item !optional;
 }
-
+app-custom-item-counter {
+  @extend %cx-item-counter !optional;
+}
+app-custom-cart-details {
+ @extend %cx-cart-details !optional;
+}
+app-custom-cart-item-list {
+  @extend %cx-cart-item-list !optional;
+}

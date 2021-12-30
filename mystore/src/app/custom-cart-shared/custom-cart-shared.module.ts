@@ -7,22 +7,24 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UrlModule, I18nModule, FeaturesConfigModule } from '@spartacus/core';
 import { CartCouponModule, PromotionsModule, IconModule, MediaModule, ItemCounterModule, ModalModule, OutletModule } from '@spartacus/storefront';
 import { CustomItemCounterModule } from '../shared/custom-item-counter/custom-item-counter.module';
+import { CustomCartItemListComponent } from './custom-cart-item-list/custom-cart-item-list.component';
 
 
 
 @NgModule({
   declarations: [
-    CustomCartItemComponent
+    CustomCartItemComponent,
+    CustomCartItemListComponent
   ],
   imports: [
     CommonModule,
-    I18nModule,
     RouterModule,
     CartCouponModule,
     ReactiveFormsModule,
     UrlModule,
     NgbModule,
     PromotionsModule,
+    I18nModule,
     IconModule,
     MediaModule,
     ItemCounterModule,
@@ -31,7 +33,7 @@ import { CustomItemCounterModule } from '../shared/custom-item-counter/custom-it
     ModalModule,
     OutletModule,
   ],
-  exports: [CustomCartItemComponent],
-  entryComponents: [CustomCartItemComponent]
+  exports: [CustomCartItemComponent, CustomCartItemListComponent],
+  entryComponents: [CustomCartItemComponent, CustomCartItemListComponent]
 })
 export class CustomCartSharedModule { }
